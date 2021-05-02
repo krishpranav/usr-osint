@@ -6,10 +6,10 @@ def run(self):
 
     # No argument
     if not len(self.items):
-        print('''Profil3r is an OSINT tool that allows you to find potential profiles of a person on social networks, as well as their email addresses. This program also alerts you to the presence of a data leak for the found emails.
-    Usage : ./main.py <arguments>
-    for exemple : ./main.py john doe
-                ./main.py john doe 67''')
+        print('''usr-osint is an OSINT tool that allows you to find potential profiles of a person on social networks, as well as their email addresses and shows you the data leak of the found emails.
+    Usage : ./usrosint.py <arguments>
+    for exemple : ./usrosint.py user name
+                ./usrosint.py user name''')
 
     else:
         self.menu()
