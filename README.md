@@ -14,5 +14,9 @@ python3 usrosint.py
 ```
 
 # Reference
+- input
+<img src="https://github.com/krishpranav/usr-osint/blob/master/images/input.png">
+
+
 - output
-<img src="https://github.com/krishpranav/usr-osint/blob/master/images/ref.png">
+<img src="https://github.com/krishpranav/usr-osint/blob/master/images/output.png">
