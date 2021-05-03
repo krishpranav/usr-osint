@@ -7,9 +7,10 @@ class Core(object):
     from .permutations import get_permutations
     from .results import print_results
     from .run import run
-    from .report import generate_report, generate_json_report, generate_HTML_report
+    from .report import generate_json_report, generate_HTML_report, generate_report
     from .modules import modules_update, get_report_modules
     from .logo import print_logo
+    from .argparse import parse_arguments
     
     from .services.social import facebook, twitter, instagram, tiktok, pinterest, linktree, myspace
     from .services.forum import zeroxzerozerosec, jeuxvideo, hackernews, crackedto
@@ -22,16 +23,14 @@ class Core(object):
     from .services.money import buymeacoffee
     from .services.domain import domain
 
-    def __init__(self, config_path, items):
-        self.version = "1.3.2"
+    def __init__(self, config_path):
+        self.version = "1.3.4"
 
         with open(config_path, 'r') as f:
             self.CONFIG = json.load(f)
 
         self.separators = []
         self.result = {}
-        # Items passed from the command line
-        self.items = items
         self.permutations_list = []
         self.modules = {
             # Emails
