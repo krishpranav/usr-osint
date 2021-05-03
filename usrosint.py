@@ -10,4 +10,4 @@ from multiprocessing import Process
 
 CONFIG = './config.json'
 
-usrosint = Core(CONFIG).run()
+profil3r = Core(CONFIG).run()
